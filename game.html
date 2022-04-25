@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raumschiff-Game</title>
+
+    <style>
+        canvas{
+            background-color: rgb(141, 74, 228);
+        }
+
+        #menu{
+            text-align: center;
+            position: absolute;
+            top: 50px;
+            left: 300px;
+        }
+
+        h1{
+            margin-bottom: 50px;
+        }
+
+        h2{
+            color: rgb(230, 31, 31);
+        }
+
+        #easy{
+            background-color: indigo;
+            color: ivory;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        #hard{
+            background-color: rgb(170, 21, 21);
+            color: ivory;
+            border-radius: 30px;
+        }
+        #score{
+            text-align: center;
+            position: absolute;
+            top: 15px;
+            left: 340px;
+            visibility: hidden;
+            color: honeydew;
+            font-size: 20px;
+        }
+
+        #finish{
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+            visibility: hidden;
+            color: honeydew;
+            font-size: 20px;
+        }
+
+    </style>
+
+    <script src="space_game.js"></script>
+
+</head>
+<body>
+    <canvas width="720" height="480" id="canvas">
+        
+    </canvas>
+    
+    <div id=menu>
+        <h1>Space Game</h1>
+        <button onclick="startApp('easy')" id="easy"> Easy </button>
+        <br>
+        <button onclick="startApp('hard')" id="hard"> Hard </button>
+    </div>
+
+    <div id= finish>
+        <h2 id=endingScore> Your Score: </h2>
+    </div>
+
+    <p id="score" >
+        Score: 
+    </p>
+    
+</body>
+</html>
